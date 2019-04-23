@@ -8,10 +8,10 @@ It uses data from imdb.json
 ```
 # create a virtualenv 
 virtualenv env_movie
-source env_movie/bin/activate
+sourcepath>env_movie\scritps\activate
 pip install -r reuqirements.txt
 ./manage.py migrate
-./manage.py runserver 7001
+./manage.py runserver
 ./manage.py populate_movies
 ```
 
@@ -19,13 +19,15 @@ pip install -r reuqirements.txt
 API request examples
 
 base API url
-https://pure-fortress-93926.herokuapp.com/api/movies
+https://secure-woodland-10945.herokuapp.com/api/movies
+
+header : user base authentication - user name and password
 
 filter by name (full text search)
-https://pure-fortress-93926.herokuapp.com/api/movies?name=wizard
+https://secure-woodland-10945.herokuapp.com/api/movies?name=wizard
 
 filter by movie name and director name
-https://pure-fortress-93926.herokuapp.com/api/movies?name=wizard&director=victor
+https://secure-woodland-10945.herokuapp.com/api/movies?name=wizard&director=victor
 
 filter by genre name
-https://pure-fortress-93926.herokuapp.com/api/movies?genre=family
+https://secure-woodland-10945.herokuapp.com/api/movies?genre=family
